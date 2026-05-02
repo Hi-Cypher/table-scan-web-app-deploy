@@ -6,10 +6,11 @@
       var redirect = sessionStorage.redirect;
       delete sessionStorage.redirect;
       if (redirect && redirect !== location.href) {
-        history.replaceState(null, '', redirect);
+        history.replaceState(null, "", redirect);
       }
     })();
   </script>
+
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
